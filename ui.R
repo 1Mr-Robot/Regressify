@@ -81,9 +81,16 @@ ui <- fluidPage(
         background: #c3e6cb;
       }
 
+      .nav-tabs {
+        border-radius: 20px 20px 0 0;
+        background-color: #e6e6e6;
+        padding: 0 20px;
+      }
+
       .nav-tabs > li > a {
         font-weight: 600;
         color: #6b6c7e;
+        border-radius: 10px 10px 0 0;
       }
       .nav-tabs > li.active > a {
         color: #5a4fcf;
@@ -93,7 +100,7 @@ ui <- fluidPage(
       .tab-content {
         background: white;
         padding: 25px;
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
         box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         animation: fadeIn 0.5s ease;
       }
