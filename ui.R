@@ -21,6 +21,7 @@ ui <- fluidPage(
         border-radius: 20px;
         box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         margin-bottom: 30px;
+        margin-top: 15px;
         animation: fadeIn 0.5s ease;
       }
 
@@ -121,7 +122,7 @@ ui <- fluidPage(
 
   # ---- TÍTULO ----
   div(class = "main-card",
-      h1("📊 Resolución de Problemas de Regresión"),
+      h1("📊 Regressify"),
       p(style="color:#6b6c7e; font-size: 15px;",
         "Análisis estadístico de regresión lineal simple y múltiple")
   ),
