@@ -5,6 +5,7 @@ ui <- fluidPage(
   
   # ---- CSS Moderno Mejorado ----
   tags$head(
+    tags$link(rel = "icon", type = "image/x-icon", href = "favicon.ico"),
     tags$style(HTML("
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
