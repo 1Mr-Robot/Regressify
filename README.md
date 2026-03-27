@@ -1,4 +1,4 @@
-# ProyectoDE
+# Regressify
 
 ## Datos del equipo:
 **Materia:** Diseño de experimentos<br>
