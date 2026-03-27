@@ -28,3 +28,34 @@ Para la correcta ejecución de este proyecto es necesario tener instaladas las s
 - shiny
 - DT
 - ggplot2
+
+## Dockerización
+
+Este proyecto puede ejecutarse en un contenedor Docker para facilitar el despliegue.
+
+### Requisitos previos
+- Docker
+- Docker Compose
+
+### Ejecución con Docker Compose
+
+1. **Construir y ejecutar el contenedor:**
+```bash
+docker compose up --build
+```
+
+2. **Acceder a la aplicación:**
+- http://localhost:8003
+
+### Comandos adicionales
+
+- Detener el contenedor: `docker compose down`
+- Ver logs: `docker compose logs -f`
+- Reconstruir imagen: `docker compose build --no-cache`
+
+### Estructura de Docker
+
+| Archivo | Descripción |
+|---------|-------------|
+| `Dockerfile` | Imagen de la aplicación Shiny |
+| `docker-compose.yml` | Configuración del servicio |

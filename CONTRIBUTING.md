@@ -292,3 +292,51 @@ shiny::runApp('.')
 
 ### Problemas con caracteres especiales
 Guardar archivos CSV con encoding UTF-8.
+
+---
+
+## Dockerización
+
+### Requisitos Previos
+
+| Software | Descripción |
+|----------|-------------|
+| Docker | Motor de contenedores |
+| Docker Compose | Orquestación de servicios |
+
+### Construcción de la Imagen
+
+```bash
+docker build -t regressify .
+```
+
+### Ejecución con Docker Compose
+
+```bash
+# Iniciar la aplicación
+docker compose up
+
+# Iniciar en modo detach
+docker compose up -d
+
+# Ver logs en tiempo real
+docker compose logs -f
+
+# Detener la aplicación
+docker compose down
+```
+
+### Configuración del Servicio
+
+| Variable | Valor por defecto | Descripción |
+|----------|-------------------|-------------|
+| Puerto | 8003 | Puerto expuesto del servicio |
+
+### Acceso
+
+- **URL**: http://localhost:8003
+
+### Notas
+
+- El volumen monta el código fuente en `/app` para permitir hot-reload durante desarrollo
+- La imagen se basa en `rocker/shiny:4.3.1`
