@@ -1,7 +1,5 @@
-version: '3.8'
-
 services:
-  shiny-app:
+  web:
     build: .
     container_name: regressify
     restart: always
